@@ -1,9 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.1</TargetFramework>
-        <AssemblyName>Arvan.Powershell.Module</AssemblyName>
-        <RootNamespace>Arvan.Powershell.Module</RootNamespace>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Arvan.PowerShell.Module</AssemblyName>
+        <RootNamespace>Arvan.PowerShell.Module</RootNamespace>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-RC1" />
+    </ItemGroup>
 
 </Project>
