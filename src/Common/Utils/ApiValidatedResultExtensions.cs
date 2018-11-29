@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Hydrogen.General.Validation;
 
-namespace Arvan.PowerShell.ComputeCmdlets.FloatIp
+namespace Arvan.PowerShell.Common.Utils
 {
     public static class ApiValidatedResultExtensions
     {
