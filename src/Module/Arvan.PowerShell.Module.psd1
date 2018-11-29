@@ -56,7 +56,7 @@ Copyright = '(c) Hamed Iravanchi. All rights reserved.'
 # Assemblies that must be loaded prior to importing this module
 RequiredAssemblies = 
     '.\Newtonsoft.Json.dll', 
-    '.\Arvan.PowerShell.Context.dll',
+    '.\Arvan.PowerShell.Common.dll',
     '.\Arvan.Proxy.dll'
 
 

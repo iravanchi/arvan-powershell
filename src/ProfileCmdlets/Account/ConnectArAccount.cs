@@ -1,7 +1,7 @@
 using System;
 using System.Management.Automation;
 using System.Security;
-using Arvan.PowerShell.Context.Authentication;
+using Arvan.PowerShell.Common.Authentication;
 
 namespace Arvan.PowerShell.ProfileCmdlets.Account
 {

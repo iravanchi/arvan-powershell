@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace Arvan.PowerShell.Context
+namespace Arvan.PowerShell.Common.Utils
 {
     public class PersistenceUtil
     {

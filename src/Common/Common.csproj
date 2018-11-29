@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>Arvan.PowerShell.Context</AssemblyName>
-        <RootNamespace>Arvan.PowerShell.Context</RootNamespace>
+        <AssemblyName>Arvan.PowerShell.Common</AssemblyName>
+        <RootNamespace>Arvan.PowerShell.Common</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

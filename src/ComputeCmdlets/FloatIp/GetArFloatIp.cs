@@ -1,6 +1,6 @@
 using System;
 using System.Management.Automation;
-using Arvan.PowerShell.Context.Authentication;
+using Arvan.PowerShell.Common.Authentication;
 using Arvan.Proxy;
 using Arvan.Proxy.Authorization;
 using Arvan.Proxy.Products.IaaS;

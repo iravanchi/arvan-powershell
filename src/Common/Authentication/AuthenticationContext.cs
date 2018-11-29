@@ -1,4 +1,6 @@
-namespace Arvan.PowerShell.Context.Authentication
+using Arvan.PowerShell.Common.Utils;
+
+namespace Arvan.PowerShell.Common.Authentication
 {
     public class AuthenticationContext
     {
