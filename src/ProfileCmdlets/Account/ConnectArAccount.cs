@@ -4,7 +4,7 @@ using Arvan.PowerShell.Context.Authentication;
 namespace Arvan.PowerShell.ProfileCmdlets.Account
 {
     [OutputType(typeof(string))]
-    [Cmdlet(VerbsCommunications.Connect, "ArAccount")]
+    [Cmdlet(VerbsCommunications.Connect, "ArAccount", SupportsShouldProcess = true)]
     public class ConnectArAccount : Cmdlet
     {
         [ValidateNotNullOrEmpty]
@@ -13,6 +13,9 @@ namespace Arvan.PowerShell.ProfileCmdlets.Account
 
         protected override void ProcessRecord()
         {
+            if (!ShouldProcess("account", "set"))
+                return;
+            
             AuthenticationContext.PersistentContext = new AuthenticationContextEntity
             {
                 ApiKey = ApiKey,
