@@ -54,7 +54,9 @@ Copyright = '(c) Hamed Iravanchi. All rights reserved.'
 # RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
-# RequiredAssemblies = @()
+RequiredAssemblies = @(
+    'bin\Debug\netstandard2.0\Arvan.PowerShell.Context.dll'
+)
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()
@@ -66,7 +68,10 @@ Copyright = '(c) Hamed Iravanchi. All rights reserved.'
 # FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-NestedModules = @('bin\Debug\netstandard2.0\Arvan.PowerShell.Module.dll')
+NestedModules = @(
+    'bin\Debug\netstandard2.0\Arvan.PowerShell.Module.dll', 
+    'bin\Debug\netstandard2.0\Arvan.PowerShell.ProfileCmdlets.dll'
+)
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = '*'

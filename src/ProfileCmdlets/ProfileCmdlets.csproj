@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Arvan.PowerShell.ProfileCmdlets</AssemblyName>
+        <RootNamespace>Arvan.PowerShell.ProfileCmdlets</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-RC1" />
+    </ItemGroup>
+
+</Project>
