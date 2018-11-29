@@ -18,13 +18,7 @@
 
     <ItemGroup>
       <None Remove="Arvan.PowerShell.Module.psd1" />
-      <Content Include="Arvan.PowerShell.Module.psd1">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Content>
       <None Remove="Arvan.PowerShell.Module.psm1" />
-      <Content Include="Arvan.PowerShell.Module.psm1">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Content>
     </ItemGroup>
 
 </Project>
