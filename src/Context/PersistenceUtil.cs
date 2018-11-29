@@ -16,6 +16,8 @@ namespace Arvan.PowerShell.Context
 
         public static TEntity Load<TEntity>(string fileName)
         {
+            EnsureProfileSubfolderExists();
+            
             string filePath = Path.Combine(PersistenceRootFolder, fileName);
             if (!File.Exists(filePath))
                 return default(TEntity);
@@ -32,8 +34,16 @@ namespace Arvan.PowerShell.Context
 
         public static void Save<TEntity>(string fileName, TEntity entity)
         {
+            EnsureProfileSubfolderExists();
+            
             string filePath = Path.Combine(PersistenceRootFolder, fileName);
             File.WriteAllText(filePath, JsonConvert.SerializeObject(entity));
+        }
+
+        private static void EnsureProfileSubfolderExists()
+        {
+            if (!Directory.Exists(PersistenceRootFolder))
+                Directory.CreateDirectory(PersistenceRootFolder);
         }
     }
 }
