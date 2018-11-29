@@ -9,6 +9,9 @@ namespace Arvan.PowerShell.ProfileCmdlets.Account
     [Cmdlet(VerbsCommunications.Connect, "ArAccount", SupportsShouldProcess = true, DefaultParameterSetName = "ApiKey")]
     public class ConnectArAccount : Cmdlet
     {
+        private const string ApiKeyPrefix = "Apikey ";
+        private const string BearerPrefix = "Bearer ";
+        
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ParameterSetName = "ApiKey", HelpMessage = "The API Key connected to the account, provided by Arvan")]
         public string ApiKey { get; set; }
@@ -56,6 +59,18 @@ namespace Arvan.PowerShell.ProfileCmdlets.Account
 
         private AuthenticationContextEntity BuildAuthenticationContextEntity()
         {
+            if (!string.IsNullOrWhiteSpace(ApiKey) &&
+                ApiKey.StartsWith(ApiKeyPrefix, StringComparison.InvariantCultureIgnoreCase))
+            {
+                ApiKey = ApiKey.Substring(ApiKeyPrefix.Length);
+            }
+
+            if (!string.IsNullOrWhiteSpace(BearerToken) &&
+                BearerToken.StartsWith(BearerPrefix, StringComparison.InvariantCultureIgnoreCase))
+            {
+                BearerToken = BearerToken.Substring(BearerPrefix.Length);
+            }
+            
             return new AuthenticationContextEntity
             {
                 ApiKey = ApiKey,
