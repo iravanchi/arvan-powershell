@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Context", "src\Context\Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileCmdlets", "src\ProfileCmdlets\ProfileCmdlets.csproj", "{395C2FD2-245F-4110-9588-E7ADB9C703F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputeCmdlets", "src\ComputeCmdlets\ComputeCmdlets.csproj", "{CE10AE23-1F87-47B2-8085-126B8E7FB91D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,10 +28,15 @@ Global
 		{395C2FD2-245F-4110-9588-E7ADB9C703F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{395C2FD2-245F-4110-9588-E7ADB9C703F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{395C2FD2-245F-4110-9588-E7ADB9C703F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE10AE23-1F87-47B2-8085-126B8E7FB91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE10AE23-1F87-47B2-8085-126B8E7FB91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE10AE23-1F87-47B2-8085-126B8E7FB91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE10AE23-1F87-47B2-8085-126B8E7FB91D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{90CDD070-EC14-4CD1-B946-F6D10D9F169C} = {12B30F11-F421-4B10-AE15-79543030D997}
 		{D3DF65D8-D2FD-4816-8777-127DFC9AA0D3} = {12B30F11-F421-4B10-AE15-79543030D997}
 		{395C2FD2-245F-4110-9588-E7ADB9C703F0} = {12B30F11-F421-4B10-AE15-79543030D997}
+		{CE10AE23-1F87-47B2-8085-126B8E7FB91D} = {12B30F11-F421-4B10-AE15-79543030D997}
 	EndGlobalSection
 EndGlobal

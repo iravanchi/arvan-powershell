@@ -56,7 +56,8 @@ Copyright = '(c) Hamed Iravanchi. All rights reserved.'
 # Assemblies that must be loaded prior to importing this module
 RequiredAssemblies = 
     '.\Newtonsoft.Json.dll', 
-    '.\Arvan.PowerShell.Context.dll'
+    '.\Arvan.PowerShell.Context.dll',
+    '.\Arvan.Proxy.dll'
 
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
@@ -71,7 +72,8 @@ RequiredAssemblies =
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
 NestedModules = @(
     '.\Arvan.PowerShell.Module.dll', 
-    '.\Arvan.PowerShell.ProfileCmdlets.dll'
+    '.\Arvan.PowerShell.ProfileCmdlets.dll',
+    '.\Arvan.PowerShell.ComputeCmdlets.dll'
 )
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
