@@ -8,13 +8,24 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
       <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-RC1" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Context\Context.csproj" />
       <ProjectReference Include="..\ProfileCmdlets\ProfileCmdlets.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Arvan.PowerShell.Module.psd1" />
+      <Content Include="Arvan.PowerShell.Module.psd1">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Arvan.PowerShell.Module.psm1" />
+      <Content Include="Arvan.PowerShell.Module.psm1">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
