@@ -54,9 +54,10 @@ Copyright = '(c) Hamed Iravanchi. All rights reserved.'
 # RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
-RequiredAssemblies = @(
+RequiredAssemblies = 
+    'bin\Debug\netstandard2.0\Newtonsoft.Json.dll', 
     'bin\Debug\netstandard2.0\Arvan.PowerShell.Context.dll'
-)
+
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()

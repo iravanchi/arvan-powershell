@@ -24,7 +24,7 @@ namespace Arvan.PowerShell.Context
             {
                 return JsonConvert.DeserializeObject<TEntity>(File.ReadAllText(filePath));
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return default(TEntity);
             }
