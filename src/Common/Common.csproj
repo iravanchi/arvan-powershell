@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Arvan.PowerShell.Common</AssemblyName>
+        <RootNamespace>Arvan.PowerShell.Common</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Arvan.Proxy" Version="1.0.3" />
+      <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+      <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-RC1" />
+    </ItemGroup>
+
+</Project>
